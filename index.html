@@ -4,13 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#ffffff" />
-  <meta name="description" content="王淳藝 Chun Yi Wang｜Senior UI/UX Designer、Digital Product Designer、Creative Technologist。以設計策略、使用者體驗與前端技術，打造更直覺、優雅且具商業價值的數位產品。" />
+  <meta name="description" content="王淳藝 Chun Yi Wang｜台北 UI/UX 與數位產品設計師，專注於品牌網站、AI 產品、數據儀表板與設計系統，將策略、體驗與前端協作轉化為可落地的數位產品。" />
   <meta name="author" content="王淳藝 Chun Yi Wang" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="./index.html" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="王淳藝 Chun Yi Wang｜Design with Purpose. Build with Impact." />
-  <meta property="og:description" content="以設計創造價值，以技術實現體驗。探索 UI/UX、數位產品設計與前端協作的精選案例。" />
+  <meta property="og:description" content="台北 UI/UX 與數位產品設計師，專注於品牌網站、AI 產品、數據體驗與設計系統。" />
   <meta property="og:locale" content="zh_TW" />
+  <meta property="og:url" content="./index.html" />
+  <meta property="og:image" content="portfolio/me.png" />
+  <meta property="og:image:alt" content="王淳藝的個人插畫" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="王淳藝 Chun Yi Wang｜UI/UX & Digital Product Designer" />
+  <meta name="twitter:description" content="以設計策略、使用者體驗與前端技術，打造直覺且具商業價值的數位產品。" />
+  <meta name="twitter:image" content="portfolio/me.png" />
   <title>王淳藝 Chun Yi Wang｜UI/UX & Digital Product Designer</title>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "王淳藝 Chun Yi Wang",
+      "jobTitle": "UI/UX & Digital Product Designer",
+      "description": "台北 UI/UX 與數位產品設計師，專注於品牌網站、AI 產品、數據體驗與設計系統。",
+      "image": "portfolio/me.png",
+      "url": "./index.html",
+      "sameAs": [
+        "https://github.com/oaob1997/oaob1997.github.io",
+        "https://www.linkedin.com/in/%E6%B7%B3%E8%97%9D-%E7%8E%8B-4406a2203"
+      ],
+      "knowsAbout": ["UI/UX Design", "Digital Product Design", "Design Systems", "Front-end Collaboration", "AI Experience"]
+    }
+  </script>
 
   <!-- Tailwind CDN：本頁另以原生 CSS 定義品牌元件與精細視覺細節。 -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -26,7 +52,7 @@
           },
           fontFamily: {
             sans: ['Inter', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', 'sans-serif'],
-            display: ['Manrope', 'Inter', 'Noto Sans TC', 'sans-serif']
+            display: ['Inter', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', 'sans-serif']
           }
         }
       }
@@ -34,7 +60,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
   <style>
@@ -69,6 +95,8 @@
       color: var(--ink);
       background: var(--bg);
       font-family: Inter, 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
@@ -92,13 +120,16 @@
       font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
     }
     .eyebrow::before { content: ''; width: 22px; height: 1px; background: var(--rose-deep); }
+    h1, h2, h3, h4, h5, h6, .hero-title, .experience-cell strong, .brand-mock h4, .coach-title, .contact h2 {
+      font-family: Inter, 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif !important;
+    }
     .section-title {
       margin: 18px 0 0; font-size: clamp(2.2rem, 4.4vw, 4.2rem); line-height: 1.07;
       letter-spacing: -.055em; font-weight: 600; text-wrap: balance;
     }
     .section-title .soft { color: #a99bb5; font-weight: 500; }
-    .section-intro { max-width: 590px; color: var(--ink-soft); font-size: 15px; line-height: 1.95; }
-    .section-pad { padding-block: 120px; }
+    .section-intro { max-width: 590px; color: var(--ink-soft); font-size: 15px; line-height: 2.05; }
+    .section-pad { padding-block: 112px; }
     .section-head { display: flex; justify-content: space-between; align-items: end; gap: 36px; margin-bottom: 54px; }
     .section-head .section-intro { max-width: 390px; margin: 0 0 5px; }
 
@@ -111,15 +142,17 @@
     .nav-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .brand { display: inline-flex; align-items: center; gap: 11px; min-width: max-content; }
     .brand-mark {
-      width: 39px; height: 39px; display: grid; place-items: center; position: relative; overflow: hidden;
-      border-radius: 14px; background: linear-gradient(145deg, #fff2f1 2%, #f7d6d5 46%, #e4d1f2 100%);
-      color: #4a3e55; font-size: 14px; font-weight: 700; letter-spacing: -.08em;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,.8);
+      width: 44px; height: 44px; display: block; position: relative; overflow: hidden;
+      border-radius: 15px; background: radial-gradient(circle at 82% 15%, rgba(255,255,255,.9) 0 8%, transparent 9%), linear-gradient(145deg, #fff6f4 0%, #f7d6d5 44%, #ddc8ed 100%);
+      color: transparent; font-size: 0; box-shadow: inset 0 0 0 1px rgba(255,255,255,.86), 0 8px 18px rgba(174,137,190,.16);
+      transform: rotate(-3deg); transition: transform .25s ease, box-shadow .25s ease;
     }
-    .brand-mark::after { content: ''; position: absolute; width: 24px; height: 24px; border: 1px solid rgba(255,255,255,.9); border-radius: 50%; transform: translate(10px, -10px); }
-    .brand-copy { display: grid; gap: 2px; }
-    .brand-name { font-size: 13px; font-weight: 700; letter-spacing: .01em; }
-    .brand-caption { color: var(--muted); font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: .09em; }
+    .brand-mark::before { content: 'C'; position: absolute; left: 8px; bottom: 7px; color: #41384d; font: 800 21px/1 Inter, 'Noto Sans TC', sans-serif; letter-spacing: -.12em; }
+    .brand-mark::after { content: 'W'; position: absolute; right: 5px; bottom: 6px; color: #9876ad; font: 800 18px/1 Inter, 'Noto Sans TC', sans-serif; letter-spacing: -.18em; }
+    .brand:hover .brand-mark { transform: rotate(0) translateY(-2px); box-shadow: inset 0 0 0 1px rgba(255,255,255,.92), 0 12px 24px rgba(174,137,190,.24); }
+    .brand-copy { display: grid; gap: 3px; }
+    .brand-name { font-size: 14px; font-weight: 700; letter-spacing: .01em; }
+    .brand-caption { color: var(--muted); font-family: Inter, 'Noto Sans TC', sans-serif; font-size: 9px; letter-spacing: .14em; }
     .nav-links { display: flex; align-items: center; gap: clamp(18px, 2.6vw, 36px); }
     .nav-links a:not(.nav-cta) { position: relative; padding-block: 10px; color: #666675; font-size: 12px; transition: color .2s ease; }
     .nav-links a:not(.nav-cta)::after { content: ''; position: absolute; left: 0; right: 100%; bottom: 3px; height: 1px; background: var(--rose-deep); transition: right .25s ease; }
@@ -135,7 +168,7 @@
     .nav-cta { min-height: 42px; padding-inline: 18px; }
     .btn-primary { color: #2d2637; background: linear-gradient(105deg, #f9e0df, #e6d5f2); box-shadow: 0 10px 25px rgba(206, 173, 218, .22); }
     .btn:hover, .nav-cta:hover { transform: translateY(-3px); background: #fbf2ff; border-color: #c9a9dc; box-shadow: 0 12px 28px rgba(139, 99, 163, .15); }
-    .btn:hover::after, .nav-cta:hover::after { content: 'Status: Ready to Connect'; position: absolute; z-index: 2; inset: 0; display: grid; place-items: center; padding: 0 8px; background: #fbf2ff; color: #806696; font: 10px 'DM Mono', monospace; letter-spacing: -.02em; white-space: nowrap; }
+    .btn:hover::after, .nav-cta:hover::after { content: none; display: none; }
     .btn-primary:hover { background: #fbf2ff; }
     .btn svg, .nav-cta svg { width: 15px; height: 15px; flex: none; transition: transform .25s ease; }
     .btn:hover svg, .nav-cta:hover svg { transform: translate(2px, -2px); }
@@ -144,7 +177,7 @@
 
     /* Hero：文字敘事與抽象產品視覺形成不對稱構圖 */
     .hero {
-      position: relative; isolation: isolate; min-height: 760px; padding: calc(var(--nav-height) + 64px) 0 62px;
+      position: relative; isolation: isolate; min-height: 720px; padding: calc(var(--nav-height) + 22px) 0 52px;
       display: flex; align-items: center; overflow: hidden; background: #fff;
     }
     .hero::before { content: ''; position: absolute; z-index: -3; width: 720px; height: 720px; top: -220px; right: -140px; border-radius: 50%; background: radial-gradient(circle, rgba(247,214,213,.48), rgba(213,181,230,.19) 43%, transparent 71%); filter: blur(12px); }
@@ -166,15 +199,21 @@
     .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
     .hero-note { display: flex; align-items: center; gap: 10px; margin-top: 35px; color: #93919c; font-size: 11px; }
     .hero-note-line { width: 37px; height: 1px; background: #d7c5e4; }
-    .hero-visual { position: relative; min-width: 0; min-height: 490px; display: grid; place-items: center; }
-    .orbit { position: absolute; border: 1px solid rgba(168, 143, 190, .22); border-radius: 50%; transform: rotate(-24deg); }
+    .hero-visual { position: relative; isolation: isolate; min-width: 0; min-height: 490px; display: grid; place-items: center; }
+    .hero-visual::before { content: ''; position: absolute; z-index: -2; width: 250px; height: 250px; top: 8%; right: 4%; border-radius: 50%; background: radial-gradient(circle, rgba(247,214,213,.8), rgba(247,214,213,0) 70%); filter: blur(10px); animation: visualBlob 8s ease-in-out infinite alternate; }
+    .hero-visual::after { content: ''; position: absolute; z-index: -2; width: 190px; height: 190px; bottom: 4%; left: 3%; border-radius: 42% 58% 64% 36%; background: radial-gradient(circle, rgba(213,181,230,.58), rgba(213,181,230,0) 70%); filter: blur(8px); animation: visualBlobTwo 9s ease-in-out infinite alternate; }
+    .orbit { position: absolute; border: 1px solid rgba(168, 143, 190, .22); border-radius: 50%; transform: rotate(-24deg); animation: orbitDrift 12s ease-in-out infinite; }
     .orbit-one { width: 430px; height: 300px; }
-    .orbit-two { width: 360px; height: 470px; transform: rotate(42deg); border-color: rgba(235, 174, 176, .22); }
-    .orbit-three { width: 270px; height: 270px; border-style: dashed; border-color: rgba(172, 148, 192, .28); }
+    .orbit-two { width: 360px; height: 470px; transform: rotate(42deg); border-color: rgba(235, 174, 176, .22); animation-delay: -4s; }
+    .orbit-three { width: 270px; height: 270px; border-style: dashed; border-color: rgba(172, 148, 192, .28); animation-duration: 9s; animation-direction: reverse; }
     .visual-glow { position: absolute; width: 310px; height: 310px; border-radius: 50%; background: linear-gradient(145deg, rgba(247,214,213,.75), rgba(213,181,230,.56)); filter: blur(45px); opacity: .65; animation: breathe 7s ease-in-out infinite alternate; }
     @keyframes breathe { to { transform: scale(1.12) translate(8px,-10px); opacity: .85; } }
-    .hero-device { position: relative; z-index: 2; width: min(100%, 370px); border: 1px solid rgba(255,255,255,.85); border-radius: 27px; background: rgba(255,255,255,.68); box-shadow: 0 30px 80px rgba(80, 61, 100, .15), inset 0 0 0 1px rgba(187,168,201,.25); backdrop-filter: blur(18px); transform: rotate(3deg); overflow: hidden; animation: floatDevice 7s ease-in-out infinite; }
-    @keyframes floatDevice { 0%,100% { transform: translateY(0) rotate(3deg); } 50% { transform: translateY(-10px) rotate(1.5deg); } }
+    @keyframes visualBlob { to { transform: translate(-32px, 25px) scale(1.18); opacity: .68; } }
+    @keyframes visualBlobTwo { to { transform: translate(28px, -18px) rotate(22deg) scale(1.12); opacity: .8; } }
+    @keyframes orbitDrift { 0%,100% { transform: rotate(-24deg) scale(1); } 50% { transform: rotate(-17deg) scale(1.04); } }
+    .hero-device { position: relative; z-index: 2; width: min(100%, 370px); border: 1px solid rgba(255,255,255,.85); border-radius: 27px; background: rgba(255,255,255,.68); box-shadow: 0 30px 80px rgba(80, 61, 100, .15), inset 0 0 0 1px rgba(187,168,201,.25); backdrop-filter: blur(18px); transform: rotate(3deg); overflow: hidden; animation: floatDevice 7s ease-in-out infinite; transition: transform .4s ease, box-shadow .4s ease; }
+    .hero-device:hover { transform: translateY(-8px) rotate(0deg) scale(1.02); box-shadow: 0 38px 95px rgba(80, 61, 100, .22), inset 0 0 0 1px rgba(187,168,201,.3); }
+    @keyframes floatDevice { 0%,100% { transform: translateY(0) rotate(3deg); } 50% { transform: translateY(-13px) rotate(1.5deg); } }
     .device-top { display: flex; justify-content: space-between; align-items: center; padding: 17px 20px 14px; border-bottom: 1px solid rgba(77, 68, 95, .09); }
     .device-brand { display: flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 700; }
     .device-brand-mark { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 8px; background: linear-gradient(145deg, #f7d6d5, #d5b5e6); font-size: 10px; }
@@ -188,6 +227,11 @@
     .device-chart::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(to bottom, transparent 0 28px, rgba(113, 103, 133, .09) 29px 30px), repeating-linear-gradient(to right, transparent 0 39px, rgba(113, 103, 133, .08) 40px 41px); }
     .chart-label { position: absolute; top: 14px; left: 14px; z-index: 1; color: #888191; font: 8px 'DM Mono', monospace; letter-spacing: .06em; }
     .chart-svg { position: absolute; inset: 30px 10px 9px; width: calc(100% - 20px); height: calc(100% - 39px); overflow: visible; }
+    .chart-svg path { stroke-dasharray: 520; stroke-dashoffset: 520; animation: drawChart 3.5s cubic-bezier(.4,0,.2,1) .4s forwards, chartPulse 4s ease-in-out 4s infinite alternate; }
+    .chart-svg path:first-of-type { stroke-dasharray: none; stroke-dashoffset: 0; animation: chartAreaPulse 4s ease-in-out 4s infinite alternate; }
+    @keyframes drawChart { to { stroke-dashoffset: 0; } }
+    @keyframes chartPulse { to { transform: translateY(-3px); } }
+    @keyframes chartAreaPulse { to { opacity: .68; } }
     .device-bottom-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 11px; }
     .mini-stat { padding: 13px; border: 1px solid rgba(134,119,155,.13); border-radius: 13px; background: rgba(255,255,255,.66); }
     .mini-stat-label { display: block; color: #8e8997; font: 8px 'DM Mono', monospace; }
@@ -211,10 +255,9 @@
     .about-layout { position: relative; display: grid; grid-template-columns: .76fr 1.24fr; gap: clamp(50px, 9vw, 145px); }
     .about-aside { position: relative; }
     .about-aside-inner { position: sticky; top: 125px; }
-    .about-monogram { width: min(100%, 300px); aspect-ratio: .9; position: relative; display: grid; place-items: center; margin-top: 44px; border-radius: 190px 190px 24px 24px; background: linear-gradient(145deg, #fae8e7 0%, #f7d6d5 36%, #e8d9f1 100%); overflow: hidden; }
-    .about-monogram::before, .about-monogram::after { content: ''; position: absolute; border: 1px solid rgba(255,255,255,.7); border-radius: 50%; }
-    .about-monogram::before { width: 78%; aspect-ratio: 1; transform: translate(-12%, 4%); }
-    .about-monogram::after { width: 52%; aspect-ratio: 1; transform: translate(18%, -13%); }
+    .about-monogram { width: min(100%, 300px); position: relative; display: block; margin-top: 44px; }
+    .about-monogram::before, .about-monogram::after { display: none; }
+    .about-portrait { display: block; width: 100%; height: auto; object-fit: contain; object-position: center top; }
     .monogram-letters { position: relative; z-index: 1; color: rgba(255,255,255,.89); font: 600 clamp(5rem, 11vw, 8rem)/1 Manrope, sans-serif; letter-spacing: -.12em; text-shadow: 0 4px 26px rgba(163,128,175,.16); }
     .portrait-note { position: absolute; z-index: 2; bottom: 17px; left: 18px; right: 18px; display: flex; justify-content: space-between; align-items: center; color: rgba(72,61,82,.75); font: 9px 'DM Mono', monospace; letter-spacing: .06em; }
     .about-quote { margin: 27px 0 0; padding-left: 16px; border-left: 2px solid var(--rose-deep); font-size: 14px; line-height: 1.9; font-weight: 500; }
@@ -328,6 +371,25 @@
     .project-note { margin: 7px 0 0; color: #9c95a3; font-size: 9px; line-height: 1.7; }
     .work-bottom-cta { display: flex; align-items: center; justify-content: space-between; gap: 30px; margin-top: 150px; padding: 28px 0 0; border-top: 1px solid var(--line); }
     .work-bottom-cta p { max-width: 520px; margin: 0; color: var(--ink-soft); font-size: 13px; line-height: 1.8; }
+    .visual-gallery { margin-top: 112px; }
+    .visual-gallery-head { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 28px; }
+    .visual-gallery-head h3 { margin: 0; font-size: clamp(1.5rem, 2.5vw, 2.1rem); font-weight: 600; letter-spacing: -.045em; }
+    .visual-gallery-head p { max-width: 350px; margin: 0; color: var(--ink-soft); font-size: 12px; line-height: 1.85; }
+    .visual-gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .visual-gallery-item { position: relative; min-height: 0; border-radius: 18px; overflow: hidden; background: #eee9e4; box-shadow: var(--shadow-soft); }
+    .visual-gallery-item { cursor: zoom-in; outline: none; transition: transform .35s cubic-bezier(.2,.75,.25,1), box-shadow .35s ease; }
+    .visual-gallery-item:hover, .visual-gallery-item:focus-visible { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+    .visual-gallery-item img { width: 100%; aspect-ratio: 4 / 3; height: auto; display: block; object-fit: cover; transition: transform .5s ease; }
+    .visual-gallery-item:hover img { transform: scale(1.045); }
+    .visual-gallery-caption { position: absolute; right: 12px; bottom: 12px; left: 12px; display: flex; justify-content: space-between; gap: 8px; padding: 9px 11px; border: 1px solid rgba(255,255,255,.48); border-radius: 10px; color: #fff; background: rgba(34,35,51,.42); backdrop-filter: blur(10px); font: 9px 'DM Mono', monospace; letter-spacing: .04em; }
+    .lightbox { position: fixed; z-index: 2100; inset: 0; display: grid; place-items: center; padding: 28px; background: rgba(34,35,51,.72); opacity: 0; visibility: hidden; transition: opacity .35s ease, visibility .35s ease; backdrop-filter: blur(12px); }
+    .lightbox.is-open { opacity: 1; visibility: visible; }
+    .lightbox-figure { position: relative; max-width: min(1100px, 92vw); max-height: 88vh; margin: 0; transform: translateY(18px) scale(.96); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
+    .lightbox.is-open .lightbox-figure { transform: translateY(0) scale(1); }
+    .lightbox-image { display: block; max-width: 100%; max-height: 78vh; width: auto; height: auto; border-radius: 14px; box-shadow: 0 30px 90px rgba(17,15,26,.35); }
+    .lightbox-caption { margin-top: 12px; color: rgba(255,255,255,.82); text-align: center; font-size: 12px; }
+    .lightbox-close { position: absolute; top: -14px; right: -14px; display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid rgba(255,255,255,.48); border-radius: 50%; color: #fff; background: rgba(34,35,51,.78); font-size: 18px; cursor: pointer; transition: transform .2s ease, background .2s ease; }
+    .lightbox-close:hover, .lightbox-close:focus-visible { transform: rotate(90deg); background: #806696; }
 
     /* 服務 */
     .services { background: #fff; }
@@ -447,7 +509,9 @@
       .section-head .section-intro, .process-heading .section-intro { max-width: 530px; }
       .section-title { font-size: clamp(2.25rem, 9vw, 3.6rem); }
       .nav-inner { width: calc(100% - 36px); }
-      .brand-mark { width: 36px; height: 36px; }
+      .brand-mark { width: 40px; height: 40px; border-radius: 14px; }
+      .brand-mark::before { left: 7px; bottom: 6px; font-size: 19px; }
+      .brand-mark::after { right: 4px; bottom: 5px; font-size: 16px; }
       .brand-name { font-size: 12px; }
       .brand-caption { font-size: 8px; }
       .menu-toggle { display: block; position: relative; z-index: 1002; }
@@ -458,7 +522,7 @@
       .nav-links a:not(.nav-cta) { padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 16px; color: var(--ink); }
       .nav-links a:not(.nav-cta)::after { display: none; }
       .nav-links .nav-cta { align-self: start; margin-top: 25px; }
-      .hero { min-height: 0; padding: calc(var(--nav-height) + 36px) 0 73px; }
+      .hero { min-height: 0; padding: calc(var(--nav-height) + 20px) 0 64px; }
       .hero-inner { grid-template-columns: 1fr; gap: 10px; }
       .hero-copy { padding: 16px 0 0; }
       .hero-title { max-width: 620px; margin: 25px 0 20px; font-size: clamp(3.2rem, 11vw, 5.8rem); }
@@ -475,18 +539,20 @@
       .hero-bottomline .bottom-right { display: none; }
       .about-layout, .expertise-layout { grid-template-columns: 1fr; gap: 42px; }
       .about-aside-inner, .expertise-copy { position: static; }
-      .about-aside { display: grid; grid-template-columns: minmax(120px,.7fr) 1fr; align-items: center; gap: 22px; }
+      .about-aside { display: block; text-align: center; }
+      .about-aside-inner { display: block; }
+      .about-aside-inner > .eyebrow { display: inline-flex; }
+      .about-aside-inner > .section-title { margin: 18px auto 0; text-align: center; }
+      .about-aside-inner > .about-monogram { margin: 28px auto 0; }
+      .about-aside-inner > .about-quote { margin: 28px auto 0; max-width: 390px; text-align: left; }
+      .about-aside { display: block; }
       .about-monogram { width: 100%; max-width: 215px; margin-top: 0; }
       .monogram-letters { font-size: clamp(4.3rem, 14vw, 6rem); }
       .about-quote { margin: 0; font-size: 12px; }
       .about-quote span { font-size: 9px; }
       .about-aside-inner > .eyebrow, .about-aside-inner > .section-title { max-width: 100%; }
       .about-aside-inner > .section-title { font-size: 2.3rem; }
-      .about-aside-inner { display: contents; }
-      .about-aside-inner > .eyebrow { grid-column: 1 / -1; }
-      .about-aside-inner > .section-title { grid-column: 1 / -1; margin-top: -29px; }
-      .about-aside-inner > .about-monogram { grid-column: 1; }
-      .about-aside-inner > .about-quote { grid-column: 2; }
+      .about-aside-inner { display: block; }
       .experience-cell { padding-inline: 11px; }
       .experience-cell strong { font-size: 20px; }
       .expertise-copy .section-intro { margin-top: 18px; }
@@ -495,6 +561,10 @@
       .work-grid { grid-template-columns: 1fr; gap: 42px; }
       .project:nth-child(even) { transform: none; }
       .project-visual { min-height: 310px; }
+      .visual-gallery { margin-top: 76px; }
+      .visual-gallery-head { align-items: start; flex-direction: column; gap: 14px; }
+      .visual-gallery-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .visual-gallery-caption { right: 8px; bottom: 8px; left: 8px; padding: 7px 8px; font-size: 8px; }
       .work-bottom-cta { margin-top: 65px; flex-direction: column; align-items: start; }
       .services-headline { grid-template-columns: 1fr; gap: 20px; margin-bottom: 34px; }
       .services-headline .section-intro { justify-self: start; }
@@ -521,7 +591,7 @@
     /* 小手機 */
     @media (max-width: 420px) {
       .container-custom { width: calc(100% - 32px); }
-      .hero { padding-top: calc(var(--nav-height) + 28px); }
+      .hero { padding-top: calc(var(--nav-height) + 18px); }
       .hero-title { font-size: clamp(2.8rem, 12vw, 3.4rem); }
       .hero-actions { align-items: stretch; flex-direction: column; max-width: 100%; }
       .hero-actions .btn { width: 100%; }
@@ -657,8 +727,8 @@
             <span class="eyebrow">02 / The person behind the pixels</span>
             <h2 class="section-title" id="aboutTitle">Design is more<br />than <span class="soft">what you see.</span></h2>
             <!-- 可將以下 CW 抽象頭像卡替換為正式個人照片。 -->
-            <div class="about-monogram" aria-label="個人品牌字母 CW 的抽象視覺示意">
-              <span class="monogram-letters">CW</span>
+            <div class="about-monogram" aria-label="王淳藝個人插畫">
+              <img class="about-portrait" src="portfolio/me.png" alt="王淳藝的個人插畫，手持畫筆的女性角色" />
               <div class="portrait-note"><span>CHUN YI WANG</span><span>DESIGNER / 01</span></div>
             </div>
             <blockquote class="about-quote">好的設計不只是視覺上的驚艷，更是商業目標與使用者需求之間的最佳解方。<span>MY DESIGN PHILOSOPHY</span></blockquote>
@@ -775,6 +845,20 @@
             <p class="project-note">裝置畫面為 CSS 概念示意，請以已取得展示授權的真實專案素材替換。</p>
           </article>
         </div>
+        <div class="visual-gallery reveal" aria-labelledby="visualGalleryTitle">
+          <div class="visual-gallery-head">
+            <div><span class="eyebrow">Illustration diary</span><h3 id="visualGalleryTitle">A softer side of making.</h3></div>
+            <p>收藏一些喜歡的角色、色彩與故事，把細膩的觀察也帶進每一次設計創作。</p>
+          </div>
+          <div class="visual-gallery-grid">
+            <figure class="visual-gallery-item" tabindex="0" role="button" aria-label="放大查看森林露營場景插畫"><img src="portfolio/01.jpg" alt="森林露營場景插畫" loading="lazy" /><figcaption class="visual-gallery-caption"><span>01 / CAMPING</span><span>STORY</span></figcaption></figure>
+            <figure class="visual-gallery-item" tabindex="0" role="button" aria-label="放大查看角色們圍坐野餐的插畫"><img src="portfolio/02.jpg" alt="角色們圍坐野餐的插畫" loading="lazy" /><figcaption class="visual-gallery-caption"><span>02 / GATHERING</span><span>WARMTH</span></figcaption></figure>
+            <figure class="visual-gallery-item" tabindex="0" role="button" aria-label="放大查看角色們在戶外聚會的插畫"><img src="portfolio/03.jpg" alt="角色們在戶外聚會的插畫" loading="lazy" /><figcaption class="visual-gallery-caption"><span>03 / TOGETHER</span><span>JOY</span></figcaption></figure>
+            <figure class="visual-gallery-item" tabindex="0" role="button" aria-label="放大查看角色們在校園中互動的插畫"><img src="portfolio/04.jpg" alt="角色們在校園中互動的插畫" loading="lazy" /><figcaption class="visual-gallery-caption"><span>04 / PLAY</span><span>ENERGY</span></figcaption></figure>
+            <figure class="visual-gallery-item" tabindex="0" role="button" aria-label="放大查看角色們在置物櫃前的插畫"><img src="portfolio/05.jpg" alt="角色們在置物櫃前的插畫" loading="lazy" /><figcaption class="visual-gallery-caption"><span>05 / FRIENDS</span><span>CARE</span></figcaption></figure>
+            <figure class="visual-gallery-item" tabindex="0" role="button" aria-label="放大查看夜晚戶外探險插畫"><img src="portfolio/06.jpg" alt="夜晚戶外探險插畫" loading="lazy" /><figcaption class="visual-gallery-caption"><span>06 / NIGHT WALK</span><span>WONDER</span></figcaption></figure>
+          </div>
+        </div>
         <div class="work-bottom-cta reveal"><p>每個畫面背後，都是一次釐清問題、整理資訊與做出取捨的過程。<br />想了解我如何為你的專案找到合適的設計方向？</p><a class="btn btn-glass" href="https://calendar.app.google/LQLEjFsfVhN1UnBt8" target="_blank" rel="noopener noreferrer">聊聊你的專案 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
       </div>
     </section>
@@ -870,6 +954,14 @@
     </section>
   </main>
 
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption" aria-hidden="true">
+    <figure class="lightbox-figure">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="關閉圖片燈箱"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      <img class="lightbox-image" id="lightboxImage" src="" alt="" />
+      <figcaption class="lightbox-caption" id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
   <script>
     (() => {
       'use strict';
@@ -960,6 +1052,44 @@
         };
         window.setTimeout(typeNext, 260);
       }
+
+      // Illustration diary：點擊圖片開啟燈箱，支援滑鼠、鍵盤與 Escape 關閉。
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightboxImage');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const galleryItems = document.querySelectorAll('.visual-gallery-item');
+      let lastFocusedGalleryItem = null;
+      const closeLightbox = () => {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('menu-open');
+        if (lastFocusedGalleryItem) lastFocusedGalleryItem.focus();
+      };
+      const openLightbox = item => {
+        const image = item.querySelector('img');
+        const caption = item.querySelector('.visual-gallery-caption');
+        lastFocusedGalleryItem = item;
+        lightboxImage.src = image.currentSrc || image.src;
+        lightboxImage.alt = image.alt;
+        lightboxCaption.textContent = caption ? caption.textContent.replace(/\s+/g, ' ').trim() : image.alt;
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('menu-open');
+        lightboxClose.focus();
+      };
+      galleryItems.forEach(item => {
+        item.addEventListener('click', () => openLightbox(item));
+        item.addEventListener('keydown', event => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openLightbox(item);
+          }
+        });
+      });
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', event => { if (event.target === lightbox) closeLightbox(); });
+      document.addEventListener('keydown', event => { if (event.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox(); });
 
       // 年份自動更新，避免頁尾日期過期。
       document.getElementById('currentYear').textContent = String(new Date().getFullYear());
